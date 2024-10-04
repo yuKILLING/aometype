@@ -7,10 +7,10 @@ type CaretProps = {
 const Caret: FC<CaretProps> = ({ typedText }) => {
   return (
     <div
-      className="absolute bg-white w-[2px] h-[1em] caret-blink"
+      className="absolute bg-white w-[3px] h-[0.8em] caret-blink"
       style={{
         left: `${typedText.length * 0.6}em`,
-        top: 6,
+        top: 9,
         transition: "left 0.08s ease-in-out",
       }}
     />
